@@ -166,7 +166,38 @@ wordpress   LoadBalancer   10.105.81.79   <pending>     80:30224/TCP   20h
 ```shell
 minikube service wordpress
 ```
+  
   You should see the familiar WordPress init page.
 
 
+## Take down and restart your blog
+
+Set up your WordPress blog and play around with it a bit. Then, take down its pods and bring them back up again. Because you used persistent disks, your blog state will be preserved.
+
+All of the resources are labeled with `app=wordpress`, so you can easily bring them down using a label selector:
+
+```shell
+kubectl delete deployment,service -l app=wordpress
+kubectl delete secret mysql-pass
+```
+
+Later, re-creating the resources with the original commands will pick up the original disks with all your data intact. Because we did not delete the PV Claims, no other pods in the cluster could claim them after we deleted our pods. Keeping the PV Claims also ensured recreating the Pods did not cause the PD to switch Pods.
+
+If you are ready to release your persistent volumes and the data on them, run:
+
+```shell
+kubectl delete pvc -l app=wordpress
+```
+
+And then delete the volume objects themselves:
+
+```shell
+kubectl delete pv local-pv-1 local-pv-2
+```
+
+or
+
+```shell
+kubectl delete pv wordpress-pv-1 wordpress-pv-2
+```
 
