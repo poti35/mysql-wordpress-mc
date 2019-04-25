@@ -89,7 +89,6 @@ kubectl get pods
 ```
 ```
 NAME                              READY   STATUS    RESTARTS   AGE
-wordpress-57699dd9cb-vld47        1/1     Running   1          20h
 wordpress-mysql-c747dbfcb-5qvcc   1/1     Running   1          20h
 ```
 
