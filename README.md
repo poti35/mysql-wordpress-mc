@@ -195,9 +195,3 @@ And then delete the volume objects themselves:
 kubectl delete pv local-pv-1 local-pv-2
 ```
 
-or
-
-```shell
-kubectl delete pv wordpress-pv-1 wordpress-pv-2
-```
-
