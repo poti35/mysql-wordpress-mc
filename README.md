@@ -1,12 +1,12 @@
 # Instalación persistente de MySQL y WordPress en Kubernetes
 
-En este ejemplo describiremos cómo ejecutar una instalación persistente de WordPress y MySQL en Kubernetes. Usaremos las imágenes oficiales de mysql y wordpress para esta instalación. (La imagen de WordPress incluye un servidor Apache).
+In this example we will describe how to execute a persistent installation of WordPress and MySQL in Kubernetes. We will use the official images of mysql and wordpress for this installation. (The image of WordPress includes an Apache server). 
 
-Usaremos los siguientes conceptos de Kubernetes:
+We will use the following concepts of Kubernetes: 
 
-* Volúmenes persistentes (ciclo de vida del disco no vinculado a los Pods).
-* Servicios para permitir que los Pods se localicen unos a otros.
-* Balanceador de carga externo para exponer los servicios externamente.
+* Persistent Volumns (life cicle of disk not linked to Pods).
+* Services for allow Pods to locaste each other.
+* Load Balancer Balanceador de carga externo para exponer los servicios externamente.
 * Despliegues para asegurar que los Pods se mantengan en funcionamiento.
 * Secrets para almacenar contraseñas confidenciales.
 
