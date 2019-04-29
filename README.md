@@ -10,13 +10,13 @@ We will use the following concepts of Kubernetes:
 * Deployments to ensure that the Pods remain operational.
 * Secrets to store confidential passwords.
 
-### Pre-requisitos 
+### REQUIREMENTS
 
 For our example we will need to install Minikube and the Kubectl command on our machine. 
 
 #### KUBECTL
 
-Use the best option for your OS descripted in this link: [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-with-curl)
+Use the option corresponding to your operating system: [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-with-curl)
 
 #### MINIKUBE
 
@@ -42,7 +42,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 choco install minikube
 ```
 
-* Fifth: open a powershell and execute ```minikube start``` . This will create a VM instance with the installation of kubernetes locally. 
+* Fifth: open a powershell and execute ```minikube start --v 3``` . This will create a VM instance with the installation of kubernetes locally. 
 * Sixth: check if your installation if running properly, for that execute por example: ```kubectl get nodes``` the result must be similar to: 
 
 ```
