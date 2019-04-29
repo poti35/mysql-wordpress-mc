@@ -42,7 +42,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 choco install minikube
 ```
 
-* Fifth: open a powershell and execute ```minikube start --v 3``` . This will create a VM instance with the installation of kubernetes locally. 
+* Fifth: open a powershell and execute ```minikube start --v=3``` . This will create a VM instance with the installation of kubernetes locally. 
 * Sixth: check if your installation if running properly, for that execute por example: ```kubectl get nodes``` the result must be similar to: 
 
 ```
