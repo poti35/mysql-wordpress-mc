@@ -6,13 +6,13 @@ We will use the following concepts of Kubernetes:
 
 * Persistent Volumns (life cicle of disk not linked to Pods).
 * Services for allow Pods to locaste each other.
-* Load Balancer Balanceador de carga externo para exponer los servicios externamente.
-* Despliegues para asegurar que los Pods se mantengan en funcionamiento.
-* Secrets para almacenar contraseñas confidenciales.
+* Load Balancer, a external load balancer to expose the services. 
+* Deployments to ensure that the Pods remain operational.
+* Secrets to store confidential passwords.
 
 ### Pre-requisitos 
 
-Para nuestro ejemplo necesitaremos instalar Minikube y el comando Kubectl, en nuestra máquina. 
+For our example we will need to install Minikube and the Kubectl command on our machine. 
 
 #### KUBECTL
 
