@@ -10,7 +10,7 @@ We will use the following concepts of Kubernetes:
 * Deployments to ensure that the Pods remain operational.
 * Secrets to store confidential passwords.
 
-### REQUIREMENTS
+### Requirements
 
 For our example we will need to install Minikube and the Kubectl command on our machine. 
 
