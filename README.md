@@ -20,7 +20,7 @@ Use the option corresponding to your operating system: [kubectl](https://kuberne
 
 #### MINIKUBE
 
-For install Minikube we can follow the official documentation [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/#install-minikube), but here aunque aqui os muestra la instalación es Windows: 
+For install Minikube we can follow the official documentation [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/#install-minikube), but here appear the installation on Windows: 
 
 * First: VT-x/AMD-v vitualization must be enable in BIOS 
 * Second: For the installation on Windows, Minikube needs VirtualBox installed in the OS. The version of VirtualBox is not relevant. 
